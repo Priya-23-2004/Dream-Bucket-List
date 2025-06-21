@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    border-top: 5px solid #009578;
+    border-bottom: 5px solid #009578;
+    border-left: 5px solid #009578;
+    border-right: 5px solid #009578;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    border-top: 5px solid #009578;
+    border-bottom: 5px solid #009578;
+    border-left:  5px solid #009578;
+    border-right:  5px solid #009578;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    
+}
+.DreamBucketList {
+    display: flex;
+    justify-content: space-between;
+    padding: 1cm;
+}
+.DreamBucketList__value {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1cm;
+    font-weight: 1;
+    flex-grow: 0;
+}
+
+
+.DreamBucketList:has(.DreamBucketList__checkbox:checked){
+    color: #555555;
+    background: #eeeeee;
+    text-decoration: line-through;
+    order: 1;
+}
